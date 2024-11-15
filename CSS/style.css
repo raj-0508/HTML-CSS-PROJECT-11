@@ -31,14 +31,13 @@ nav{
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
   font-weight: 600;
   font-size: 1rem;
 }
 
 .btn-register {
   padding: 10px 20px;
-  color: rgb(33, 133, 119);
+  color: rgb(22, 120, 177);
   border: 2px solid rgb(33, 133, 119);
   border-radius: 15px;
   font-size: 1rem;
@@ -221,36 +220,97 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.footer-logo,
-.footer-menu,
-.footer-links,
-.footer-social {
-  max-width: 200px;
+.footer-logo {
+  max-width: 300px;
+}
+
+.footer-logo img{
+  height: 3rem;
+}
+
+.footer-logo p {
+  font-size: .85rem;
+  margin-top: 1rem;
+  line-height: 1.25;
+  color: #8d8d8d;
+}
+
+.footer-social img{
+  height: 1.5rem;
+  margin-right: .5rem;
+
+}
+
+.footer-menu h4,
+.footer-links h4,
+.footer-social h4 {
+  margin-bottom: 1rem;
 }
 
 .footer-menu ul,
-.footer-links ul,
-.footer-social ul {
+.footer-links ul {
   list-style: none;
   padding: 0;
 }
 
 .footer-menu ul li,
-.footer-links ul li,
-.footer-social ul li {
+.footer-links ul li {
   margin-bottom: 10px;
 }
 
 .footer-menu ul li a,
-.footer-links ul li a,
-.footer-social ul li a {
+.footer-links ul li a {
   text-decoration: none;
 }
 
-.footer-social ul li a:hover {
-  color: #007bff;
+/* Hosting Section Styling */
+.hosting-section {
+  background-image: url(../assets/footer-bg.svg);
+  background-size: cover;
+  padding: 5rem 2rem;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.hosting-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hosting-text {
+  max-width: 60%;
+}
+
+.hosting-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hosting-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.btn-register1 {
+  display: inline-block;
+  padding: 15px 40px;
+  border: 2px solid white;
+  border-radius: 25px;
+  background: transparent;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 /* Responsive Styles */
@@ -289,7 +349,6 @@ footer {
 
   .footer-content {
       flex-direction: column;
-      text-align: center;
   }
 
   .pricing-item {
@@ -300,7 +359,24 @@ footer {
     padding: 10px 18px;
     font-size: 0.9rem;
     max-width: 160px;
-}
+  }
+
+  .hosting-section {
+    padding: 3rem 1rem;
+ }
+
+  .hosting-text h1 {
+    font-size: 1.85rem;
+  }
+
+  .hosting-text p {
+    font-size: 0.75rem;
+  }
+
+  .btn-register1 {
+    font-size: 0.7rem;
+    padding: 7px 21px;
+  }
 }
 
 /* Tablets (max-width: 768px) */
@@ -339,15 +415,29 @@ footer {
       padding: 2rem 1.5rem;
   }
 
-  .footer-content {
-      text-align: center;
-  }
 
   .pricing-item .btn-choose {
     padding: 11px 20px;
     font-size: 0.95rem;
     max-width: 170px;
-}
+  }
+
+  .hosting-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .hosting-text h1 {
+    font-size: 2rem;
+  }
+
+  .hosting-text p {
+    font-size: .85rem;
+  }
+
+  .btn-register1 {
+    font-size: 0.75rem;
+    padding: 8px 24px;
+  }
 }
 
 /* Laptops (max-width: 1024px) */
@@ -378,6 +468,24 @@ footer {
 
   footer {
       padding: 2rem 1.5rem;
+  }
+  .hosting-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hosting-text {
+    max-width: 100%;
+  }
+
+  .hosting-button {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .btn-register1 {
+    font-size: .95rem;
+    padding: 10px 30px;
   }
 }
 
