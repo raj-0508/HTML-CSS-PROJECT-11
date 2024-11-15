@@ -132,9 +132,13 @@ nav{
 /* Pricing Section */
 .pricing {
   padding: 3rem 2rem;
-  background-color: #007bff;
+  background-color: #0069d9;
   color: #fff;
+  border-radius: 10px;
+}
+.pricing h2 {
   text-align: center;
+  font-size: 1.8rem;
 }
 
 .pricing-grid {
@@ -145,11 +149,27 @@ nav{
 }
 
 .pricing-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   background: #fff;
   color: #333;
   padding: 2rem;
   border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
+
+.btn-price {
+  align-self: self-start;
+  margin-top: 2rem;
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
 
 /* Testimonials Section */
 .testimonials {
@@ -194,8 +214,6 @@ nav{
 /* Footer Section */
 footer {
   padding: 3rem 2rem;
-  background-color: #333;
-  color: white;
 }
 
 .footer-content {
@@ -228,7 +246,6 @@ footer {
 .footer-menu ul li a,
 .footer-links ul li a,
 .footer-social ul li a {
-  color: white;
   text-decoration: none;
 }
 
@@ -278,6 +295,12 @@ footer {
   .pricing-item {
       padding: 1.5rem;
   }
+
+  .pricing-item .btn-choose {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    max-width: 160px;
+}
 }
 
 /* Tablets (max-width: 768px) */
@@ -319,6 +342,12 @@ footer {
   .footer-content {
       text-align: center;
   }
+
+  .pricing-item .btn-choose {
+    padding: 11px 20px;
+    font-size: 0.95rem;
+    max-width: 170px;
+}
 }
 
 /* Laptops (max-width: 1024px) */
@@ -378,67 +407,5 @@ footer {
 }
 
 
-/* Pricing Section */
-.pricing {
-  padding: 3rem 2rem;
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-}
 
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
 
-.pricing-item {
-  background: #fff;
-  color: #333;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-/* Buttons inside the Pricing Section */
-.pricing-item .btn-choose {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1rem;  /* Font size to ensure text fits */
-  font-weight: 600;
-  white-space: nowrap;  /* Prevents text from wrapping to the next line */
-  text-align: center;
-  width: 100%;  /* Ensures full width buttons for smaller devices */
-  max-width: 180px; /* Limits width to prevent oversized buttons on large screens */
-  margin: 0 auto; /* Center the button */
-  transition: all 0.3s ease;
-}
-
-.pricing-item .btn-choose:hover {
-  background-color: #0056b3;
-}
-
-/* Responsive Pricing Button Adjustments */
-
-/* Mobile devices (max-width: 600px) */
-@media (max-width: 600px) {
-  .pricing-item .btn-choose {
-      padding: 10px 18px;
-      font-size: 0.9rem;  /* Slightly reduce font size for smaller screens */
-      max-width: 160px;  /* Reduce max width */
-  }
-}
-
-/* Tablets (max-width: 768px) */
-@media (max-width: 768px) {
-  .pricing-item .btn-choose {
-      padding: 11px 20px;
-      font-size: 0.95rem;  /* Minor font adjustment */
-      max-width: 170px;  /* Adjust button size for tablet screens */
-  }
-}
