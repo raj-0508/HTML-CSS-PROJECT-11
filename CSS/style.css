@@ -45,6 +45,12 @@ nav{
   text-decoration: none;
 }
 
+.nav-menu-icon{
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
 /* Services Section */
 .btn-primary {
   background-color: #007bff;
@@ -84,7 +90,6 @@ nav{
 
 .service-box .content p {
   margin: 1rem 0;
-  font-size: 1.125rem;
   line-height: 1.5;
   font-size: 1rem;
   color: #8d8d8d;
@@ -109,18 +114,18 @@ nav{
 .service-item {
   padding: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.service-item h3 {
+  margin-top: 1.5rem;
 }
 
 .service-list p {
+  margin-top: 1.5rem;
   line-height: 1.5;
-  font-size: 1rem;
-  color: #8d8d8d;
-}
-
-.service-list p {
-  line-height: 1.2;
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: .85rem;
   color: #8d8d8d;
 }
 
@@ -144,13 +149,11 @@ nav{
   color: #333;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Testimonials Section */
 .testimonials {
   padding: 3rem 2rem;
-  text-align: center;
   background-color: #f9f9f9;
 }
 
@@ -164,7 +167,28 @@ nav{
 .testimonial-item {
   background: #fff;
   padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-item p {
+  font-size: .75rem;
+  font-weight: 600;
+  color: #8d8d8d;
+  line-height: 1.5;
+}
+
+.testimonial-item h4 {
+  margin-top: 1rem;
+  font-size: .9rem;
+  font-weight: 800;
+}
+
+.testimonial-item img {
+  position: absolute;
+}
+
+.Customer-name {
+  padding-left: 4rem;
 }
 
 /* Footer Section */
@@ -230,6 +254,10 @@ footer {
       text-align: center;
   }
 
+  .service-box img {
+      max-width: 250px;
+  }
+
   .service-box .content {
       max-width: 100%;
   }
@@ -248,7 +276,7 @@ footer {
   }
 
   .pricing-item {
-      padding: 1.5rem; /* Reduce padding on mobile */
+      padding: 1.5rem;
   }
 }
 
@@ -263,6 +291,10 @@ footer {
       text-align: center;
   }
 
+  .service-box img {
+      width: 300;
+  }
+
   .service-box .content {
       max-width: 100%;
       margin-bottom: 1.5rem;
@@ -273,11 +305,11 @@ footer {
   }
 
   .pricing-grid {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   }
 
   .testimonials-grid {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   }
 
   footer {
@@ -294,13 +326,17 @@ footer {
   .nav-links {
       display: none;
   }
+
+  .nav-menu-icon{
+    display: block;
+  }
   
   .service-box .content h2 {
       font-size: 1.6rem;
   }
 
   .service-box img{
-      width: 100%;
+      width: 350;
   }
 
   .pricing-item {
@@ -318,14 +354,16 @@ footer {
 
 /* Large screens (min-width: 1200px) */
 @media (min-width: 1200px) {
-  html {
-      font-size: 17px; /* Slightly larger font size for large screens */
+  .nav-menu-icon{
+    display: none;
+  }
+  .nav-links {
+      display: flex;
   }
 
   .hero-section .content h1 {
-      font-size: 3rem; /* Larger text for big screens */
+      font-size: 3rem;
   }
-
   .hero-section .content p {
       font-size: 1.2rem;
   }
@@ -360,7 +398,7 @@ footer {
   color: #333;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Buttons inside the Pricing Section */
