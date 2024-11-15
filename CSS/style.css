@@ -33,15 +33,27 @@ nav{
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.btn-register {
+
+
+.custom-btn {
   padding: 10px 20px;
   color: rgb(22, 120, 177);
   border: 2px solid rgb(33, 133, 119);
   border-radius: 15px;
   font-size: 1rem;
   text-decoration: none;
+}
+
+.nav-links li:nth-child(7) a {
+  background-color: #941616;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .nav-menu-icon{
