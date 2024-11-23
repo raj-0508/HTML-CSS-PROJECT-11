@@ -24,6 +24,8 @@ nav{
 
 .nav-links {
   display: flex;
+  flex: 1;
+  justify-content: flex-end;
   align-items: center;
   gap: 2rem;
   list-style: none;
