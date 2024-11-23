@@ -14,7 +14,7 @@ CSS Grid layout for responsive design
 Media queries for different screen sizes (tablet, desktop, mobile)
 Adaptive layout for optimal user experience
 
-Time Taken: 2 days
+Time Taken: 3 days
 
 # Main Points:
 
