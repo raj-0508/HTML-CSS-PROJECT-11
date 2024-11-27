@@ -239,7 +239,6 @@ section.pricing h2 {
 .cancel {
   font-size: 0.8rem;
   color: #888;
-  margin-top: -10px;
   transition: color 0.3s ease;
 }
 
