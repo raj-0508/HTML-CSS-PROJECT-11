@@ -411,41 +411,41 @@ footer {
 /* Mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
   header {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .service-list-heading {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .service-box {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .service-box img {
-      max-width: 250px;
+    max-width: 250px;
   }
 
   .service-box .content {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .pricing-grid {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .testimonials-grid {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .footer-content {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .pricing-item {
-      padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   .pricing-item .btn-choose {
@@ -475,25 +475,25 @@ footer {
 /* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .nav-links {
-      display: none;
+    display: none;
   }
 
   .service-box {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .service-box img {
-      width: 300;
+    width: 300;
   }
 
   .service-box .content {
-      max-width: 100%;
-      margin-bottom: 1.5rem;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
   }
 
   .service-list {
-      padding: 2.5rem 1.5rem;
+    padding: 2.5rem 1.5rem;
   }
 
   section.pricing h2 {
@@ -518,11 +518,11 @@ footer {
   }
 
   .testimonials-grid {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   footer {
-      padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
 
@@ -553,7 +553,7 @@ footer {
 /* Laptops (max-width: 1024px) */
 @media (max-width: 1024px) {
   .nav-links {
-      display: none;
+    display: none;
   }
 
   .nav-menu-icon{
@@ -565,23 +565,23 @@ footer {
   }
   
   .service-box .content h2 {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
 
   .service-box img{
-      width: 350;
+    width: 350;
   }
 
   .pricing-item {
-      padding: 2rem;
+    padding: 2rem;
   }
 
   .testimonial-item {
-      padding: 2rem;
+    padding: 2rem;
   }
 
   footer {
-      padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem;
   }
   .hosting-container {
     flex-direction: column;
@@ -609,22 +609,22 @@ footer {
     display: none;
   }
   .nav-links {
-      display: flex;
+    display: flex;
   }
 
   .hero-section .content h1 {
-      font-size: 3rem;
+    font-size: 3rem;
   }
   .hero-section .content p {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .service-box .content h2 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .service-box img{
-      width: 400px;
+    width: 400px;
   }
 }
 
