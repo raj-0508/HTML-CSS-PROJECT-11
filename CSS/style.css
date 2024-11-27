@@ -322,7 +322,7 @@ footer {
 }
 
 .footer-logo img{
-  height: 3rem;
+  height: 4rem;
 }
 
 .footer-logo p {
@@ -333,31 +333,36 @@ footer {
 }
 
 .footer-social img{
-  height: 1.5rem;
+  height: 2rem;
   margin-right: .5rem;
+  margin-top: 1rem;
   
 }
 
 .footer-menu h4,
 .footer-links h4,
-.footer-social h4 {
+.footer-overview h4 {
   margin-bottom: 1rem;
 }
 
 .footer-menu ul,
-.footer-links ul {
+.footer-links ul,
+.footer-overview ul {
   list-style: none;
   padding: 0;
 }
 
 .footer-menu ul li,
-.footer-links ul li {
+.footer-links ul li,
+.footer-overview ul li {
   margin-bottom: 10px;
 }
 
 .footer-menu ul li a,
-.footer-links ul li a {
+.footer-links ul li a,
+.footer-overview ul li a {
   text-decoration: none;
+  color: #777777;
 }
 
 /* Hosting Section Styling */
