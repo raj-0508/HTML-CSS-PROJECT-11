@@ -110,6 +110,12 @@ nav{
 
 .service-list-heading{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-list-heading p{
+  max-width: 40%;
 }
 
 .services-grid {
@@ -424,6 +430,10 @@ footer {
     flex-direction: column;
   }
 
+  .service-list-heading p {
+    max-width: 100%;
+  }
+  
   .service-box {
     flex-direction: column;
     text-align: center;
